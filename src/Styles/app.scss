@@ -1,9 +1,11 @@
 @import 'var';
+@import 'header';
 
 *{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'bongkar', sans-serif;
 }
 body{
     overflow-x: hidden;
