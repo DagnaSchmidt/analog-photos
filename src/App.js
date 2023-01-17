@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <Routes>
-          <Route path='/' exact element={<Main />} />
+          <Route path='/' exact element={<Main isOpen={isOpen} setIsOpen={setIsOpen} />} />
           <Route path='/photos' exact element={<Photos />} />
           <Route path='/about' exact element={<About />} /> 
         </Routes>
