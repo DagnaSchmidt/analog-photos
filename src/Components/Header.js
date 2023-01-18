@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {GrClose, GrAdd} from 'react-icons/gr';
 
 const Header = ({isOpen, setIsOpen}) => {
   return (
@@ -17,9 +16,9 @@ const Header = ({isOpen, setIsOpen}) => {
                     <Link to='/about'>ABOUT</Link>
                 </li>
             </ul>
-            <div className='nav__toggle' onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? <GrClose /> : <GrAdd /> }
-            </div>
+            <p className='nav__toggle' onClick={() => setIsOpen(!isOpen)}>
+                MENU
+            </p>
         </nav>
     </header>
   )
