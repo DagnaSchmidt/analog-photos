@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import data from '../Data/dataPhotos';
 const allCategories = [...new Set(data.map((item) => item.category))];
 
-const Photos = () => {
+const Photos = ({setIsOpen}) => {
   const [photos, setPhotos] = useState(data);
   const [categories, setCategories] = useState(allCategories);
 
@@ -10,7 +10,10 @@ const Photos = () => {
     const newPhotos = data.filter((item) => item.category === category);
     setPhotos(newPhotos);
   }
-
+  React.useEffect(() =>{
+    setIsOpen(false)
+  }, [])
+  
   return (
     <section className='photos'>
       <div className='photos__gallery'>
@@ -21,11 +24,14 @@ const Photos = () => {
         })}
       </div>
       <nav className='photos__nav'>
+        <div className='photos__nav__links'>
         {categories.map((category, index) => {
           return (
             <button key={index} className='photos__nav__link' onClick={() => filterPhotos(category)}>{category}</button>
           )
         })}
+        </div>
+        <div className='photos__nav__toggle'></div>
       </nav>
     </section>
     

@@ -139,14 +139,16 @@ ul, li {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
   position: absolute;
   width: 100%;
   bottom: 0;
   padding: 12px 12px 36px 12px;
   background-color: var(--color-black);
+}
+.photos__nav__links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 .photos__nav__link {
   font-size: 16px;
