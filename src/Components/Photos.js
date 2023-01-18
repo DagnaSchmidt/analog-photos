@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import data from '../Data/dataPhotos';
+import {HiOutlineChevronDoubleLeft} from 'react-icons/hi';
 const allCategories = [...new Set(data.map((item) => item.category))];
 
 const Photos = ({setIsOpen}) => {
@@ -13,6 +14,8 @@ const Photos = ({setIsOpen}) => {
   React.useEffect(() =>{
     setIsOpen(false)
   }, [])
+
+  const[isHidden, setIsHidden] = useState(true);
   
   return (
     <section className='photos'>
@@ -24,14 +27,16 @@ const Photos = ({setIsOpen}) => {
         })}
       </div>
       <nav className='photos__nav'>
-        <div className='photos__nav__links'>
+        <div className='photos__nav__links' style={{display: isHidden ? 'none' : 'flex'}}>
         {categories.map((category, index) => {
           return (
             <button key={index} className='photos__nav__link' onClick={() => filterPhotos(category)}>{category}</button>
           )
         })}
         </div>
-        <div className='photos__nav__toggle'></div>
+        <div className='photos__nav__toggle' onClick={() => setIsHidden(!isHidden)}>
+          <p className='photos__nav__toggle__text'>{isHidden ? "show categories" : "hide"}</p>
+        </div>
       </nav>
     </section>
     
