@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import data from '../Data/dataPhotos';
-import {HiOutlineChevronDoubleLeft} from 'react-icons/hi';
+import {BiChevronsUp} from 'react-icons/bi';
 const allCategories = [...new Set(data.map((item) => item.category))];
 
 const Photos = ({setIsOpen}) => {
-  const [photos, setPhotos] = useState(data);
+  const [photos, setPhotos] = useState([]);
   const [categories, setCategories] = useState(allCategories);
 
   const filterPhotos = (category) => {
@@ -18,7 +18,7 @@ const Photos = ({setIsOpen}) => {
     document.getElementById('gallery').scrollTo(0, 0)
   }, [photos])
 
-  const[isHidden, setIsHidden] = useState(true);
+  const[isHidden, setIsHidden] = useState(false);
   
   return (
     <section className='photos'>
@@ -29,11 +29,14 @@ const Photos = ({setIsOpen}) => {
           )
         })}
       </div>
+      <div className='photos__scrollup' onClick={() => document.getElementById('gallery').scrollTo(0, 0)}>
+        <BiChevronsUp />
+      </div>
       <nav className='photos__nav'>
         <div className='photos__nav__links' style={{display: isHidden ? 'none' : 'flex'}}>
         {categories.map((category, index) => {
           return (
-            <button key={index} className='photos__nav__link' onClick={() => filterPhotos(category)}>{category}</button>
+            <button key={index} className='photos__nav__link' onClick={() => {filterPhotos(category); setIsHidden(true)}}>{category}</button>
           )
         })}
         </div>
