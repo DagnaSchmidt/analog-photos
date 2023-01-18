@@ -140,6 +140,7 @@ ul, li {
   -ms-overflow-style: none;
   scrollbar-width: none;
   display: flex;
+  justify-content: center;
   gap: 12px;
   position: absolute;
   width: 100%;
@@ -164,13 +165,13 @@ ul, li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   overflow: scroll;
   max-height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .photos__gallery__img {
-  height: 80vh;
+  height: 75vh;
   width: auto;
 }/*# sourceMappingURL=app.css.map */
