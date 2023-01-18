@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import data from '../Data/dataPhotos';
 import {HiOutlineChevronDoubleLeft} from 'react-icons/hi';
 const allCategories = [...new Set(data.map((item) => item.category))];
@@ -11,15 +11,18 @@ const Photos = ({setIsOpen}) => {
     const newPhotos = data.filter((item) => item.category === category);
     setPhotos(newPhotos);
   }
-  React.useEffect(() =>{
+  useEffect(() =>{
     setIsOpen(false)
   }, [])
+  useEffect(() =>{
+    document.getElementById('gallery').scrollTo(0, 0)
+  }, [photos])
 
   const[isHidden, setIsHidden] = useState(true);
   
   return (
     <section className='photos'>
-      <div className='photos__gallery'>
+      <div className='photos__gallery' id='gallery'>
         {photos.map((item) => {
           return (
             <img className='photos__gallery__img' src={require(`../Images/${item.url}`)} />
