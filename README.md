@@ -1,3 +1,3 @@
-Free-time project: simple Analog Photografer Portfolio.
+Free-time project: simple portfolio of an analog photographer.
 
 Build on: React
