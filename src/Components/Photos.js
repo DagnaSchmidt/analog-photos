@@ -5,15 +5,15 @@ const allCategories = [...new Set(data.map((item) => item.category))];
 
 const Photos = ({setIsOpen}) => {
   const [photos, setPhotos] = useState([]);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filterPhotos = (category) => {
     const newPhotos = data.filter((item) => item.category === category);
     setPhotos(newPhotos);
   }
   useEffect(() =>{
-    setIsOpen(false)
-  }, [])
+    setIsOpen(false);
+  }, [setIsOpen])
   useEffect(() =>{
     document.getElementById('gallery').scrollTo(0, 0)
   }, [photos])

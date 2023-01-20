@@ -3,8 +3,8 @@ import data from '../Data/dataIcons';
 
 const About = ({setIsOpen}) => {
   useEffect(() =>{
-    setIsOpen(false)
-  }, [])
+    setIsOpen(false);
+  }, [setIsOpen])
   return (
     <section className='about'>
       <img className='about__img' src={require('../Images/me.jpeg')} alt='me' />
@@ -12,7 +12,7 @@ const About = ({setIsOpen}) => {
         <div className='about__info__links'>
           {data.map((item) => {
             return (
-              <a key={item.id} href={item.link} className='about__info__icon' target={'_blank'}>{item.icon}</a>
+              <a key={item.id} href={item.link} className='about__info__icon' target={'_blank'} without rel="noreferrer">{item.icon}</a>
             )
           })}
         </div>
