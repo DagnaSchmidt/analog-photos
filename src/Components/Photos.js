@@ -25,7 +25,7 @@ const Photos = ({setIsOpen}) => {
       <div className='photos__gallery' id='gallery'>
         {photos.map((item) => {
           return (
-            <img key={item.index} className='photos__gallery__img' src={require(`../Images/${item.url}`)} />
+            <img key={item.index} className='photos__gallery__img' src={require(`../Images/${item.url}`)} alt={item.category} />
           )
         })}
       </div>
