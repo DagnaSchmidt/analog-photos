@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import data from '../Data/dataIcons';
 
-const About = ( {setIsOpen}) => {
+const About = ({setIsOpen}) => {
   useEffect(() =>{
     setIsOpen(false)
   }, [])
   return (
     <section className='about'>
-      <img className='about__img' src={require('../Images/me.jpeg')} />
+      <img className='about__img' src={require('../Images/me.jpeg')} alt='me' />
       <div className='about__info'>
         <div className='about__info__links'>
           {data.map((item) => {
