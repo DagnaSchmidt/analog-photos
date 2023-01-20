@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         index: 1,
         url: "p1-1.jpg",
@@ -330,3 +330,4 @@ export default [
         category: "restless"
     }
 ]
+export default data;

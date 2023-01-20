@@ -1,6 +1,6 @@
 import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa"
 import {BsCodeSlash} from 'react-icons/bs';
-export default [
+const data = [
     {
         id: 1,
         link: "https://www.instagram.com/b.ardzo/",
@@ -22,3 +22,4 @@ export default [
         icon: <BsCodeSlash />
     }
 ]
+export default data;
