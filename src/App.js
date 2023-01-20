@@ -7,7 +7,7 @@ import About from "./Components/About";
 import './Styles/app.css';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="app">
       <BrowserRouter>
