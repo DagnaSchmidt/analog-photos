@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import data from '../Data/dataIcons';
 
 const About = ({setIsOpen}) => {
-  const icons = data;
   useEffect(() =>{
     setIsOpen(false);
   }, [setIsOpen])
@@ -11,7 +10,7 @@ const About = ({setIsOpen}) => {
       <img className='about__img' src={require('../Images/me.jpeg')} alt='me' />
       <div className='about__info'>
         <div className='about__info__links'>
-          {icons.map((item) => {
+          {data.map((item) => {
             return (
               <a key={item.id} href={item.link} className='about__info__icon' target={'_blank'} without rel="noreferrer">{item.icon}</a>
             )
