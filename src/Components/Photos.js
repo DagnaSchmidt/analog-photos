@@ -4,11 +4,12 @@ import {BiChevronsUp} from 'react-icons/bi';
 const allCategories = [...new Set(data.map((item) => item.category))];
 
 const Photos = ({setIsOpen}) => {
+  const photosData = data;
   const [photos, setPhotos] = useState([]);
   const [categories] = useState(allCategories);
 
   const filterPhotos = (category) => {
-    const newPhotos = data.filter((item) => item.category === category);
+    const newPhotos = photosData.filter((item) => item.category === category);
     setPhotos(newPhotos);
   }
   useEffect(() =>{
