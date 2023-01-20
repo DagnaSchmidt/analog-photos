@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Main isOpen={isOpen} setIsOpen={setIsOpen} />} />
           <Route path='/photos' exact element={<Photos setIsOpen={setIsOpen} />} />
-          <Route path='/about' exact element={<About />} /> 
+          <Route path='/about' exact element={<About setIsOpen={setIsOpen} />} /> 
         </Routes>
       </BrowserRouter>
     </div>
