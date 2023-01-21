@@ -50,7 +50,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 16px;
+  top: 32px;
   justify-content: space-between;
 }
 .header .nav__list__item {
@@ -66,6 +66,7 @@
   background-color: var(--color-white);
 }
 .header .nav__toggle {
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +86,7 @@
   }
   .header .nav__list {
     width: 300px;
-    top: 6px;
+    top: 16px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -93,8 +94,29 @@
     padding: 12px;
   }
   .header .nav__list {
-    padding-right: 40px;
-    top: 4px;
+    width: 240px;
+    top: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 4px;
+  }
+  .header .logo {
+    font-size: 16px;
+  }
+  .header .nav__list {
+    padding-right: 24px;
+    width: 140px;
+    top: 12px;
+  }
+  .header .nav__list__item {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .header .nav__toggle {
+    font-size: 14px;
+    padding: 6px;
   }
 }
 * {
@@ -116,7 +138,7 @@
   background-color: var(--color-black);
 }
 
-a, button, h1, h2, h3, h4, h5, h6, p {
+a, button, ul, h1, h2, h3, h4, h5, h6, p {
   all: unset;
 }
 
@@ -178,7 +200,6 @@ ul, li {
   padding: 12px 40px 12px 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   align-items: center;
 }
 .app .photos__nav__links {
@@ -331,5 +352,51 @@ ul, li {
   }
   .app .about__info {
     padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .app .photos__nav {
+    padding: 4px;
+    font-size: 16px;
+  }
+  .app .photos__nav__toggle {
+    padding: 6px;
+  }
+  .app .photos__nav__links {
+    gap: 6px;
+    padding: 0;
+  }
+  .app .photos__scrollup {
+    bottom: 40px;
+    right: 4px;
+  }
+  .app .about {
+    flex-direction: column-reverse;
+    padding: 60px 8px 8px 8px;
+    gap: 4px;
+    justify-content: flex-start;
+  }
+  .app .about__info {
+    flex-direction: row;
+    align-self: flex-start;
+    max-width: 100%;
+    width: 100%;
+  }
+  .app .about__info__links {
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .app .about__info__icon {
+    padding: 4px;
+  }
+  .app .about__info__text {
+    align-self: flex-end;
+  }
+  .app .about__img {
+    width: 100%;
+    height: auto;
+    max-height: 65vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=app.css.map */

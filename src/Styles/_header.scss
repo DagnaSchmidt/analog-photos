@@ -28,7 +28,7 @@
             margin-right: auto;
             left: 0;
             right: 0;
-            top: 16px;
+            top: 32px;
             justify-content: space-between;
             &__item {
                 font-size: 18px;
@@ -44,6 +44,7 @@
             }
         }
         &__toggle {
+            font-size: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,7 +65,7 @@
         padding: 12px;
         .nav__list {
             width: 300px;
-            top: 6px;
+            top: 16px;
         }
     }
 }
@@ -73,8 +74,30 @@
     .header {
         padding: 12px;
         .nav__list {
-            padding-right: 40px;
-            top: 4px;
+            width: 240px;
+            top: 16px;
         }
     }
 }
+//MOBILE 
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 4px;
+        .logo {
+            font-size: 16px;
+        }
+        .nav__list {
+            padding-right: 24px;
+            width: 140px;
+            top: 12px;
+            &__item {
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+        .nav__toggle {
+            font-size: 14px;
+            padding: 6px;
+        }
+    }
+} 
