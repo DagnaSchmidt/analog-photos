@@ -223,3 +223,27 @@ ul, li {
         }
     }
 }
+//TABLET
+@media screen and (max-width: 769px) {
+    .app {
+        .photos {
+            &__scrollup {
+                padding: 4px;
+                bottom: 60px;
+            }
+        }
+        .about {
+            padding: 90px 24px 40px 24px;
+            justify-content: space-between;
+            &__img {
+                width: auto;
+                height: 55vh;
+                padding: 0;
+                align-self: flex-end;
+            }
+            &__info {
+                padding: 0;
+            }
+        }
+    }
+}

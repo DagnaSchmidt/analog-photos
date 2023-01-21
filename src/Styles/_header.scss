@@ -58,13 +58,23 @@
         }
     }
 }
-
+//LAPTOP
 @media screen and (max-width: 1023px) {
     .header {
         padding: 12px;
         .nav__list {
             width: 300px;
             top: 6px;
+        }
+    }
+}
+//TABLET
+@media screen and (max-width: 769px) {
+    .header {
+        padding: 12px;
+        .nav__list {
+            padding-right: 40px;
+            top: 4px;
         }
     }
 }

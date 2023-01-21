@@ -88,6 +88,15 @@
     top: 6px;
   }
 }
+@media screen and (max-width: 769px) {
+  .header {
+    padding: 12px;
+  }
+  .header .nav__list {
+    padding-right: 40px;
+    top: 4px;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "bongkar", sans-serif;
@@ -303,5 +312,24 @@ ul, li {
   }
   .app .about__img {
     height: auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  .app .photos__scrollup {
+    padding: 4px;
+    bottom: 60px;
+  }
+  .app .about {
+    padding: 90px 24px 40px 24px;
+    justify-content: space-between;
+  }
+  .app .about__img {
+    width: auto;
+    height: 55vh;
+    padding: 0;
+    align-self: flex-end;
+  }
+  .app .about__info {
+    padding: 0;
   }
 }/*# sourceMappingURL=app.css.map */
