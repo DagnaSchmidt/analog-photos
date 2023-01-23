@@ -296,12 +296,12 @@ const data = [
     },
     {
         index: 60,
-        url: "p9-4.jpg",
+        url: "p9-4.jpeg",
         category: "trees"
     },
     {
         index: 61,
-        url: "p9-5.JPG",
+        url: "p9-5.jpeg",
         category: "trees"
     },
     {
@@ -328,6 +328,96 @@ const data = [
         index: 66,
         url: "p10-5.jpg",
         category: "restless"
+    },
+    {
+        index: 67,
+        url: "p8-6.jpeg",
+        category: "flow"
+    },
+    {
+        index: 68,
+        url: "p9-6.jpeg",
+        category: "trees"
+    },
+    {
+        index: 69,
+        url: "p9-7.jpg",
+        category: "trees"
+    },
+    {
+        index: 70,
+        url: "p9-8.jpeg",
+        category: "trees"
+    },
+    {
+        index: 71,
+        url: "p9-10.jpeg",
+        category: "trees"
+    },
+    {
+        index: 72,
+        url: "p9-11.jpeg",
+        category: "trees"
+    },
+    {
+        index: 73,
+        url: "p9-12.jpeg",
+        category: "trees"
+    },
+    {
+        index: 74,
+        url: "p9-13.jpeg",
+        category: "trees"
+    },
+    {
+        index: 75,
+        url: "p9-14.jpeg",
+        category: "trees"
+    },
+    {
+        index: 76,
+        url: "p11-1.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 77,
+        url: "p11-2.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 78,
+        url: "p11-3.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 79,
+        url: "p11-4.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 80,
+        url: "p11-5.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 81,
+        url: "p11-6.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 82,
+        url: "p11-8.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 83,
+        url: "p11-9.jpeg",
+        category: "rocks"
+    },
+    {
+        index: 84,
+        url: "p11-10.jpeg",
+        category: "rocks"
     }
 ]
 export default data;
